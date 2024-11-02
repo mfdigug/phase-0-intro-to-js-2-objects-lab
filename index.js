@@ -23,7 +23,8 @@ function deleteFromEmployeeByKey (employee, key) {
 }
 
 function destructivelyDeleteFromEmployeeByKey (employee, key) {
-  employee = (delete employee[key]); 
+  delete employee[key]; 
    return employee;
   }
-
+/* 
+console.log(destructivelyDeleteFromEmployeeByKey(employee, 'name')); */
